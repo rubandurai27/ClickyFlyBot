@@ -21,14 +21,14 @@ bot = Client('clickyfly bot',
 @bot.on_message(filters.command('start') & filters.private)
 async def start(bot, message):
     await message.reply(
-        text=f"**Hi {message.chat.first_name}!** \n\nThis is **ClickyFly URL Shorter Bot**. Just send me any big link and get short link.",
+        text=f"**Hi {message.chat.first_name}!** \n\nThis is **Playdisk URL Shorter Bot**. Just send me any big link and get short link.",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Bots Updates Channel', url='https://t.me/Discovery_Updates')
+                    InlineKeyboardButton('Updates Channel', url='https://t.me/t.me/tnrockers2021')
                 ],
                 [
-                    InlineKeyboardButton('Support Group', url='https://t.me/linux_repo')
+                    InlineKeyboardButton('Support Group', url='https://t.me/PoweRRockers')
                 ]
             ]
         )
