@@ -55,7 +55,7 @@ async def link_handler(bot, message):
         await message.reply(f'Error: {e}', quote=True)
 
 async def get_shortlink(link):
-    url = 'https://playdisk.xyz/api?api=f22a67d232e77ca22055cc9029ad375b3ead6a75&url'
+    url = 'https://playdisk.xyz/api'
     params = {'api': API_KEY, 'url': link}
 
     async with aiohttp.ClientSession() as session:
