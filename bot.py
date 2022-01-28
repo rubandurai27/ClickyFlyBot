@@ -45,7 +45,7 @@ async def link_handler(bot, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton('Open Link', url=short_link)
+                        InlineKeyboardButton('Open Link', url=https://shorturllink.in/api?api=ea6049e7beed6ab1b4d758bb6d0105a8f6fa061b&url=&format=text)
                     ]
                 ]
             ),
@@ -53,15 +53,6 @@ async def link_handler(bot, message):
         )
     except Exception as e:
         await message.reply(f'Error: {e}', quote=True)
-
-async def get_shortlink(link):
-    url = 'https://playdisk.xyz/api'
-    params = {'api': API_KEY, 'url': link}
-
-    async with aiohttp.ClientSession() as session:
-        async with session.get(url, params=params, raise_for_status=True) as response:
-            data = await response.json()
-            return data["shortenedUrl"]
 
 
 bot.run()
